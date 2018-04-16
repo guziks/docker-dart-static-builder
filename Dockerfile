@@ -1,4 +1,4 @@
-FROM google/dart
+FROM google/dart:dev
 ONBUILD WORKDIR /app
 ONBUILD COPY pubspec.* ./
 ONBUILD RUN pub get
