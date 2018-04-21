@@ -6,5 +6,4 @@ ONBUILD COPY bin/ bin/
 ONBUILD COPY lib/ lib/
 ONBUILD RUN dart \
     --snapshot=bin/main.snap \
-    --snapshot-kind=app-jit \
-    bin/main.dart --help
+    bin/main.dart
