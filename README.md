@@ -2,9 +2,7 @@
 
 Docker base image to build dart server side applications. Main feature is that app is statically built, resulting in creating [dart application snapshot](https://github.com/dart-lang/sdk/wiki/Snapshots). This way there is no need to keep whole dart sdk and pub dependencies inside an image.
 
-Intended to be used with base runtime image: [dart-static-runtime](https://hub.docker.com/r/guziks/dart-static-runtime) (it can be replaced).
-
-List of "static" images:
+List of "static" images (all are "onbuild"):
 
 * [dart-static-builder](https://hub.docker.com/r/guziks/dart-static-builder) (this one)
 * [dart-static-trainer](https://hub.docker.com/r/guziks/dart-static-trainer)
