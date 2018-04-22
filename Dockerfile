@@ -5,5 +5,5 @@ ONBUILD RUN pub get
 ONBUILD COPY bin/ bin/
 ONBUILD COPY lib/ lib/
 ONBUILD RUN dart \
-    --snapshot=bin/main.snap \
+    --snapshot=main.snap \
     bin/main.dart
